@@ -1,0 +1,17 @@
+{
+  "brand": "Dawn Handicrafts",
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Handcrafted baskets & ceramics, made to be exported",
+    "subtitle": "Natural materials, artisan quality, delivered worldwide."
+  },
+  "cta": {
+    "inquiry": "Send an Inquiry",
+    "viewProducts": "View Products"
+  }
+}

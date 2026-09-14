@@ -1,0 +1,17 @@
+{
+  "brand": "Dawn 手工艺品",
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "hero": {
+    "title": "手工花篮与陶瓷，为出口而生",
+    "subtitle": "天然材质，匠人品质，行销全球。"
+  },
+  "cta": {
+    "inquiry": "发起询盘",
+    "viewProducts": "查看产品"
+  }
+}

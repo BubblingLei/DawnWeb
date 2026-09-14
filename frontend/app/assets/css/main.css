@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* ============================================================
+   设计令牌（Design Tokens）— 现代自然风（对齐 superflora）
+   暖色中性系：米白 / 陶土 / 鼠尾草绿 / 亚麻
+   ============================================================ */
+
+:root {
+  /* 色板 */
+  --color-surface: oklch(97.5% 0.006 80);       /* 米白底 */
+  --color-surface-muted: oklch(94% 0.012 80);   /* 亚麻灰底 */
+  --color-text: oklch(26% 0.02 40);             /* 深暖灰文字 */
+  --color-text-muted: oklch(48% 0.02 40);       /* 次级文字 */
+  --color-accent: oklch(58% 0.09 150);          /* 鼠尾草绿点缀 */
+  --color-accent-strong: oklch(45% 0.09 150);   /* 深绿（hover/强调） */
+  --color-terracotta: oklch(62% 0.12 45);       /* 陶土色（手工温度感） */
+  --color-border: oklch(88% 0.01 80);           /* 细分隔线 */
+
+  /* 排版 */
+  --font-sans: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-display: 'Fraunces', 'Songti SC', Georgia, serif;
+
+  --text-hero: clamp(2.5rem, 1rem + 6vw, 5rem);
+  --text-h2: clamp(1.8rem, 1rem + 2.5vw, 2.8rem);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+
+  /* 间距节奏 */
+  --space-section: clamp(4rem, 3rem + 6vw, 9rem);
+  --space-gutter: clamp(1rem, 0.5rem + 4vw, 4rem);
+
+  /* 动效 */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 让 Tailwind 的语义色接入令牌，如 text-accent / bg-surface */
+@theme inline {
+  --color-surface: var(--color-surface);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-strong: var(--color-accent-strong);
+  --color-terracotta: var(--color-terracotta);
+  --color-border: var(--color-border);
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
