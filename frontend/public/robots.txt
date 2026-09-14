@@ -1,2 +1,4 @@
 User-Agent: *
 Disallow:
+
+Sitemap: https://dawnconnections.com/sitemap_index.xml
