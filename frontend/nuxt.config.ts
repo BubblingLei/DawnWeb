@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite'
 
+// 站点公开域名：本地开发用 localhost，上线时通过 NUXT_PUBLIC_SITE_URL 覆盖
+const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -13,13 +16,14 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  // 站点信息（sitemap 与 SEO 使用）—— 上线前替换为真实域名
+  // 站点信息（sitemap 与 SEO 使用）
   site: {
-    url: 'https://dawnhandicrafts.example.com',
+    url: SITE_URL,
     name: 'Dawn Handicrafts',
   },
 
   i18n: {
+    baseUrl: SITE_URL,
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
     langDir: 'locales',

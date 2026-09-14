@@ -6,12 +6,145 @@
     "about": "关于我们",
     "contact": "联系我们"
   },
-  "hero": {
-    "title": "手工花篮与陶瓷，为出口而生",
-    "subtitle": "天然材质，匠人品质，行销全球。"
-  },
   "cta": {
     "inquiry": "发起询盘",
     "viewProducts": "查看产品"
+  },
+  "footer": {
+    "tagline": "天然材质，匠人品质，行销全球。",
+    "quickLinks": "快捷链接",
+    "contact": "联系方式",
+    "rights": "版权所有。"
+  },
+  "home": {
+    "metaTitle": "手工花篮与陶瓷",
+    "metaDescription": "出口级手工花篮、陶瓷罐与天然材质工艺品批发，支持定制与低起订量。",
+    "heroTitle": "手工花篮与陶瓷，为出口而生",
+    "heroSubtitle": "天然材质，匠人品质，行销全球。",
+    "featuredEyebrow": "精选",
+    "featuredTitle": "热销产品",
+    "viewAll": "查看全部产品",
+    "categoriesTitle": "按分类选购",
+    "browse": "浏览",
+    "advantagesTitle": "为什么选择我们",
+    "advantage": {
+      "quality": {
+        "title": "匠人品质",
+        "desc": "手工精制，严格质检，出品稳定。"
+      },
+      "moq": {
+        "title": "灵活起订量",
+        "desc": "低起订量，助你轻松试水新市场。"
+      },
+      "export": {
+        "title": "出口经验",
+        "desc": "可靠的包装与物流，畅销全球市场。"
+      },
+      "custom": {
+        "title": "定制服务",
+        "desc": "支持定制尺寸、材质与工艺，匹配你的品牌。"
+      }
+    },
+    "ctaTitle": "准备下单了吗？",
+    "ctaSubtitle": "告诉我们你的需求，我们将在 24 小时内回复。"
+  },
+  "products": {
+    "title": "产品中心",
+    "subtitle": "浏览我们全系列手工花篮与陶瓷产品。",
+    "metaDescription": "按分类、材质与尺寸浏览出口级手工花篮、陶瓷罐与工艺品。",
+    "all": "全部",
+    "searchPlaceholder": "搜索产品…",
+    "sortBy": "排序",
+    "results": "件产品",
+    "empty": "没有符合筛选条件的产品。",
+    "clearFilters": "清除所有筛选",
+    "sort": {
+      "featured": "精选",
+      "name": "名称 A–Z",
+      "moqAsc": "起订量：低到高",
+      "moqDesc": "起订量：高到低"
+    },
+    "filter": {
+      "category": "分类",
+      "material": "材质"
+    }
+  },
+  "product": {
+    "material": "材质",
+    "sizes": "尺寸",
+    "moq": "起订量",
+    "units": "件",
+    "related": "相关产品"
+  },
+  "about": {
+    "title": "关于我们",
+    "intro": "我们为全球买家打造天然材质的花篮与陶瓷。",
+    "metaDescription": "了解我们的手工作坊、制作工艺，以及我们对品质与可持续的坚持。",
+    "story": {
+      "title": "我们的故事",
+      "body1": "我们是一群技艺精湛的匠人，在编织与制陶上积累了多年经验。每一件作品都带着手工的温度。",
+      "body2": "从原料到成品，我们把控每个环节，保证品质稳定、交期可靠。"
+    },
+    "craft": {
+      "title": "我们的工艺",
+      "body": "每一件产品都手工成型，再按严格的出口标准逐件检验。",
+      "point1": "可持续采收的天然材质",
+      "point2": "资深匠人手工精制",
+      "point3": "每道工序严格质检"
+    },
+    "values": {
+      "title": "我们的坚持",
+      "craft": {
+        "title": "匠心",
+        "desc": "传统技艺结合现代品控。"
+      },
+      "sustainable": {
+        "title": "可持续",
+        "desc": "天然可再生材质，负责任采购。"
+      },
+      "reliable": {
+        "title": "可靠",
+        "desc": "准时交付，真诚沟通。"
+      },
+      "partner": {
+        "title": "伙伴",
+        "desc": "与长期买家共同成长。"
+      }
+    },
+    "cta": "让我们建立长期合作",
+    "ctaSubtitle": "告诉我们你的需求，24 小时内为你报价。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "欢迎垂询报价、样品与定制订单。",
+    "metaDescription": "联系我们获取出口批发报价、样品与手工艺品定制服务。",
+    "email": "sales{'@'}dawnhandicrafts.example.com",
+    "phone": "+86 000 0000 0000",
+    "address": "中国安徽省手工艺品工业园",
+    "info": {
+      "emailLabel": "邮箱",
+      "phoneLabel": "电话",
+      "addressLabel": "地址",
+      "note": "工作日内我们通常在 24 小时内回复。"
+    },
+    "form": {
+      "title": "发起询盘",
+      "subtitle": "填写表单，我们将回复报价。",
+      "name": "您的姓名",
+      "email": "邮箱",
+      "country": "国家",
+      "product": "产品",
+      "message": "留言",
+      "submit": "提交询盘",
+      "submitting": "发送中…",
+      "successTitle": "感谢！",
+      "successMessage": "您的询盘已收到，我们会尽快与您联系。",
+      "again": "再发一条询盘",
+      "errors": {
+        "name": "请输入您的姓名。",
+        "email": "请输入有效的邮箱地址。",
+        "message": "请告诉我们您的需求。"
+      }
+    }
   }
 }

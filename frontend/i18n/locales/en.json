@@ -6,12 +6,145 @@
     "about": "About Us",
     "contact": "Contact"
   },
-  "hero": {
-    "title": "Handcrafted baskets & ceramics, made to be exported",
-    "subtitle": "Natural materials, artisan quality, delivered worldwide."
-  },
   "cta": {
     "inquiry": "Send an Inquiry",
     "viewProducts": "View Products"
+  },
+  "footer": {
+    "tagline": "Natural materials, artisan quality, delivered worldwide.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "metaTitle": "Handcrafted Baskets & Ceramics",
+    "metaDescription": "Wholesale handcrafted flower baskets, ceramic jars and natural-material handicrafts for export. Custom orders and low MOQ available.",
+    "heroTitle": "Handcrafted baskets & ceramics, made to be exported",
+    "heroSubtitle": "Natural materials, artisan quality, delivered worldwide.",
+    "featuredEyebrow": "Featured",
+    "featuredTitle": "Our best sellers",
+    "viewAll": "View all products",
+    "categoriesTitle": "Shop by category",
+    "browse": "Browse",
+    "advantagesTitle": "Why work with us",
+    "advantage": {
+      "quality": {
+        "title": "Artisan Quality",
+        "desc": "Hand-finished pieces with consistent, export-ready quality control."
+      },
+      "moq": {
+        "title": "Flexible MOQ",
+        "desc": "Low minimum order quantities to help you test new markets."
+      },
+      "export": {
+        "title": "Export Experience",
+        "desc": "Reliable packing and logistics for markets across the globe."
+      },
+      "custom": {
+        "title": "Custom Orders",
+        "desc": "Custom sizes, materials and finishes to match your brand."
+      }
+    },
+    "ctaTitle": "Ready to place an order?",
+    "ctaSubtitle": "Tell us what you need and we will get back to you within 24 hours."
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Browse our full range of handcrafted baskets and ceramics.",
+    "metaDescription": "Browse wholesale flower baskets, ceramic jars and handicrafts by category, material and size.",
+    "all": "All",
+    "searchPlaceholder": "Search products…",
+    "sortBy": "Sort",
+    "results": "products",
+    "empty": "No products match your filters.",
+    "clearFilters": "Clear all filters",
+    "sort": {
+      "featured": "Featured",
+      "name": "Name A–Z",
+      "moqAsc": "MOQ: low to high",
+      "moqDesc": "MOQ: high to low"
+    },
+    "filter": {
+      "category": "Category",
+      "material": "Material"
+    }
+  },
+  "product": {
+    "material": "Material",
+    "sizes": "Sizes",
+    "moq": "Min. Order",
+    "units": "pcs",
+    "related": "Related products"
+  },
+  "about": {
+    "title": "About Us",
+    "intro": "We craft natural-material baskets and ceramics for buyers around the world.",
+    "metaDescription": "Learn about our handicraft workshop, our craft process and our commitment to quality and sustainability.",
+    "story": {
+      "title": "Our Story",
+      "body1": "We are a workshop of skilled artisans with years of experience in weaving and ceramics. Every piece carries the warmth of hand work.",
+      "body2": "From raw material to finished product, we control each step to keep quality consistent and lead times reliable."
+    },
+    "craft": {
+      "title": "Our Craft",
+      "body": "Each product is shaped by hand, then inspected against strict export standards.",
+      "point1": "Sustainably sourced natural materials",
+      "point2": "Hand-finished by experienced artisans",
+      "point3": "Inspected at every stage for consistency"
+    },
+    "values": {
+      "title": "What we stand for",
+      "craft": {
+        "title": "Craftsmanship",
+        "desc": "Traditional techniques with modern quality control."
+      },
+      "sustainable": {
+        "title": "Sustainability",
+        "desc": "Natural, renewable materials and responsible sourcing."
+      },
+      "reliable": {
+        "title": "Reliability",
+        "desc": "On-time delivery and honest communication."
+      },
+      "partner": {
+        "title": "Partnership",
+        "desc": "We grow together with long-term buyers."
+      }
+    },
+    "cta": "Let's build a long-term partnership",
+    "ctaSubtitle": "Send us your requirements and receive a quote within 24 hours."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We would love to hear from you. Reach out for quotes, samples or custom orders.",
+    "metaDescription": "Contact us for wholesale quotes, samples and custom handicraft orders.",
+    "email": "sales{'@'}dawnhandicrafts.example.com",
+    "phone": "+86 000 0000 0000",
+    "address": "Handicraft Industrial Zone, Anhui, China",
+    "info": {
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "addressLabel": "Address",
+      "note": "We usually reply within 24 hours on business days."
+    },
+    "form": {
+      "title": "Send an Inquiry",
+      "subtitle": "Fill in the form and we will reply with a quote.",
+      "name": "Your Name",
+      "email": "Email",
+      "country": "Country",
+      "product": "Product",
+      "message": "Message",
+      "submit": "Submit Inquiry",
+      "submitting": "Sending…",
+      "successTitle": "Thank you!",
+      "successMessage": "Your inquiry has been received. We will get back to you shortly.",
+      "again": "Send another inquiry",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "message": "Please tell us what you are looking for."
+      }
+    }
   }
 }
