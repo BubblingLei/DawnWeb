@@ -3,12 +3,15 @@
   "nav": {
     "home": "首页",
     "products": "产品",
+    "custom": "定制",
     "about": "关于我们",
     "contact": "联系我们"
   },
   "cta": {
     "inquiry": "发起询盘",
-    "viewProducts": "查看产品"
+    "viewProducts": "查看产品",
+    "customize": "来图定制",
+    "customizeProduct": "定制此产品"
   },
   "footer": {
     "tagline": "天然材质，匠人品质，行销全球。",
@@ -76,6 +79,52 @@
     "units": "件",
     "related": "相关产品"
   },
+  "custom": {
+    "metaTitle": "定制与按需生产",
+    "metaDescription": "把你的设计或想法发给我们，我们按规格制作定制花篮、陶瓷与工艺品。",
+    "heroEyebrow": "按需定制",
+    "heroTitle": "有想法吗？我们为你制作。",
+    "heroSubtitle": "从一张参考图到一个初步想法——我们把它变成契合你品牌的定制产品。",
+    "pathwaysTitle": "两种开始方式",
+    "pathwaysSubtitle": "哪种方便就用哪种。",
+    "pathwayImageTitle": "来图定制",
+    "pathwayImageDesc": "发来照片、图纸或样品，我们报价、打样并按规格生产。",
+    "pathwayIdeaTitle": "说出你的想法",
+    "pathwayIdeaDesc": "描述你想要的尺寸、材质与风格，我们给出方案与报价。",
+    "capabilitiesTitle": "我们可以定制什么",
+    "capabilitiesSubtitle": "几乎产品的每一处都能按你的需求调整。",
+    "capabilities": {
+      "size": {
+        "title": "尺寸与造型",
+        "desc": "调整口径、高度与底径，适配你的陈列或零售需求。"
+      },
+      "color": {
+        "title": "颜色与工艺",
+        "desc": "天然染料、漆面与釉面，匹配你的品牌色。"
+      },
+      "material": {
+        "title": "材质",
+        "desc": "柳条、藤、海草、陶瓷、玻璃等。"
+      },
+      "logo": {
+        "title": "Logo 与印花",
+        "desc": "编织标、印花与包装，带上你的品牌。"
+      },
+      "packaging": {
+        "title": "包装",
+        "desc": "定制盒、吊牌与零售级呈现。"
+      },
+      "moq": {
+        "title": "灵活起订量",
+        "desc": "低起订量，先小批量试水定制系列。"
+      }
+    },
+    "categoriesTitle": "任一品类都可定制",
+    "categoriesSubtitle": "从现有产品出发，做成属于你的样子。",
+    "ctaTitle": "开始你的定制项目",
+    "ctaSubtitle": "告诉我们你的想法或发来图片，我们 24 小时内回复报价。",
+    "ctaButton": "发起定制询盘"
+  },
   "about": {
     "title": "关于我们",
     "intro": "我们为全球买家打造天然材质的花篮与陶瓷。",
@@ -130,16 +179,24 @@
     "form": {
       "title": "发起询盘",
       "subtitle": "填写表单，我们将回复报价。",
+      "typeLabel": "你想做什么？",
+      "typeInquiry": "问价",
+      "typeCustom": "来图定制",
       "name": "您的姓名",
       "email": "邮箱",
       "country": "国家",
       "product": "产品",
       "message": "留言",
+      "messageCustom": "你的设计想法",
+      "uploadLabel": "参考图",
+      "uploadHint": "可选——你的设计或参考图的 JPG/PNG。",
+      "uploadButton": "选择图片",
       "submit": "提交询盘",
       "submitting": "发送中…",
       "successTitle": "感谢！",
       "successMessage": "您的询盘已收到，我们会尽快与您联系。",
       "again": "再发一条询盘",
+      "close": "关闭",
       "errors": {
         "name": "请输入您的姓名。",
         "email": "请输入有效的邮箱地址。",

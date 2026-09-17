@@ -4,6 +4,7 @@ const { t } = useI18n()
 const links = [
   { key: 'home', to: '/' },
   { key: 'products', to: '/products' },
+  { key: 'custom', to: '/custom' },
   { key: 'about', to: '/about' },
   { key: 'contact', to: '/contact' },
 ] as const

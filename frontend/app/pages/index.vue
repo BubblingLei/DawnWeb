@@ -3,6 +3,7 @@ import { categories, products } from '~/data/products'
 
 const { t, locale } = useI18n()
 const { lt } = useLocalized()
+const { open } = useInquiryModal()
 const localePath = useLocalePath()
 
 const featured = computed(() => products.filter((p) => p.featured).slice(0, 4))
@@ -38,12 +39,20 @@ useSeoMeta({
             {{ t('home.heroSubtitle') }}
           </p>
           <div class="mt-10 flex flex-wrap gap-4">
-            <NuxtLinkLocale
-              to="/contact"
+            <button
+              type="button"
               class="rounded-full bg-accent-strong px-7 py-3 text-sm font-medium text-white transition-transform duration-fast hover:scale-[1.03]"
+              @click="open('inquiry')"
             >
               {{ t('cta.inquiry') }}
-            </NuxtLinkLocale>
+            </button>
+            <button
+              type="button"
+              class="rounded-full bg-terracotta px-7 py-3 text-sm font-medium text-white transition-transform duration-fast hover:scale-[1.03]"
+              @click="open('custom')"
+            >
+              {{ t('cta.customize') }}
+            </button>
             <NuxtLinkLocale
               to="/products"
               class="rounded-full border border-border px-7 py-3 text-sm font-medium text-text transition-colors duration-fast hover:border-accent hover:text-accent-strong"
@@ -150,12 +159,22 @@ useSeoMeta({
         <p class="mx-auto mt-4 max-w-xl text-white/80">
           {{ t('home.ctaSubtitle') }}
         </p>
-        <NuxtLinkLocale
-          to="/contact"
-          class="mt-8 inline-block rounded-full bg-white px-7 py-3 text-sm font-semibold text-accent-strong transition-transform duration-fast hover:scale-[1.03]"
-        >
-          {{ t('cta.inquiry') }}
-        </NuxtLinkLocale>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <button
+            type="button"
+            class="rounded-full bg-white px-7 py-3 text-sm font-semibold text-accent-strong transition-transform duration-fast hover:scale-[1.03]"
+            @click="open('inquiry')"
+          >
+            {{ t('cta.inquiry') }}
+          </button>
+          <button
+            type="button"
+            class="rounded-full border border-white/50 px-7 py-3 text-sm font-semibold text-white transition-colors duration-fast hover:bg-white/10"
+            @click="open('custom')"
+          >
+            {{ t('cta.customize') }}
+          </button>
+        </div>
       </div>
     </section>
   </div>

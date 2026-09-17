@@ -1,9 +1,12 @@
 <script setup lang="ts">
-const props = defineProps<{ initialProduct?: string }>()
+import type { InquiryType } from '~/composables/useInquiryModal'
+
+const props = defineProps<{ initialType?: InquiryType; initialProduct?: string }>()
 
 const { t } = useI18n()
 
 const form = reactive({
+  type: (props.initialType ?? 'inquiry') as InquiryType,
   name: '',
   email: '',
   country: '',
@@ -11,9 +14,13 @@ const form = reactive({
   message: '',
 })
 
+const designFile = ref<File | null>(null)
+
 const errors = reactive<Record<string, string>>({})
 const submitted = ref(false)
 const submitting = ref(false)
+
+const isCustom = computed(() => form.type === 'custom')
 
 function validate(): boolean {
   errors.name = form.name.trim() ? '' : t('contact.form.errors.name')
@@ -24,22 +31,29 @@ function validate(): boolean {
   return !errors.name && !errors.email && !errors.message
 }
 
+function onFileChange(event: Event) {
+  const input = event.target as HTMLInputElement
+  designFile.value = input.files?.[0] ?? null
+}
+
 async function onSubmit() {
   if (!validate()) return
 
   submitting.value = true
-  // TODO(Phase 2): 提交到后端 POST /api/inquiries。当前为占位，前端先跑通流程。
+  // TODO(Phase 2): 提交到后端 POST /api/inquiries（multipart：type + designFile + 字段）。
   await new Promise((resolve) => setTimeout(resolve, 600))
   submitting.value = false
   submitted.value = true
 }
 
 function resetForm() {
+  form.type = props.initialType ?? 'inquiry'
   form.name = ''
   form.email = ''
   form.country = ''
   form.product = props.initialProduct ?? ''
   form.message = ''
+  designFile.value = null
   submitted.value = false
 }
 </script>
@@ -52,6 +66,29 @@ function resetForm() {
       novalidate
       @submit.prevent="onSubmit"
     >
+      <!-- 类型切换：问价 / 来图定制 -->
+      <div>
+        <p class="mb-1.5 text-sm text-text-muted">{{ t('contact.form.typeLabel') }}</p>
+        <div class="grid grid-cols-2 gap-2 rounded-full bg-surface-muted p-1">
+          <button
+            type="button"
+            class="rounded-full py-2 text-sm font-medium transition-colors duration-fast"
+            :class="!isCustom ? 'bg-white text-accent-strong shadow-sm' : 'text-text-muted hover:text-text'"
+            @click="form.type = 'inquiry'"
+          >
+            {{ t('contact.form.typeInquiry') }}
+          </button>
+          <button
+            type="button"
+            class="rounded-full py-2 text-sm font-medium transition-colors duration-fast"
+            :class="isCustom ? 'bg-white text-accent-strong shadow-sm' : 'text-text-muted hover:text-text'"
+            @click="form.type = 'custom'"
+          >
+            {{ t('contact.form.typeCustom') }}
+          </button>
+        </div>
+      </div>
+
       <div class="grid gap-5 sm:grid-cols-2">
         <div>
           <label class="mb-1.5 block text-sm text-text-muted">
@@ -104,7 +141,7 @@ function resetForm() {
 
       <div>
         <label class="mb-1.5 block text-sm text-text-muted">
-          {{ t('contact.form.message') }} *
+          {{ isCustom ? t('contact.form.messageCustom') : t('contact.form.message') }} *
         </label>
         <textarea
           v-model="form.message"
@@ -113,6 +150,23 @@ function resetForm() {
           :class="errors.message ? 'border-red-400' : ''"
         />
         <p v-if="errors.message" class="mt-1 text-xs text-red-500">{{ errors.message }}</p>
+      </div>
+
+      <!-- 参考图上传（仅定制模式） -->
+      <div v-if="isCustom">
+        <label class="mb-1.5 block text-sm text-text-muted">
+          {{ t('contact.form.uploadLabel') }}
+        </label>
+        <label
+          class="flex cursor-pointer items-center justify-between gap-4 rounded-xl border border-border bg-white px-4 py-3 text-sm transition-colors duration-fast hover:border-accent"
+        >
+          <span class="truncate text-text-muted">
+            {{ designFile ? designFile.name : t('contact.form.uploadButton') }}
+          </span>
+          <span class="shrink-0 text-accent-strong" aria-hidden="true">↑</span>
+          <input type="file" accept="image/*" class="hidden" @change="onFileChange" />
+        </label>
+        <p class="mt-1 text-xs text-text-muted">{{ t('contact.form.uploadHint') }}</p>
       </div>
 
       <button

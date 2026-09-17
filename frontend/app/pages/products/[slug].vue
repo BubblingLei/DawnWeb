@@ -3,8 +3,8 @@ import { categoryBySlug, products } from '~/data/products'
 
 const { t } = useI18n()
 const { lt } = useLocalized()
+const { open } = useInquiryModal()
 const route = useRoute()
-const localePath = useLocalePath()
 
 const slug = computed(() => String(route.params.slug))
 const product = computed(() => products.find((p) => p.slug === slug.value))
@@ -17,10 +17,6 @@ const related = computed(() => {
 })
 
 const category = computed(() => (product.value ? categoryBySlug(product.value.category) : null))
-
-const inquiryHref = computed(() =>
-  product.value ? localePath(`/contact?product=${product.value.slug}`) : localePath('/contact'),
-)
 
 useSeoMeta({
   title: () => (product.value ? `${lt(product.value.name)} — ${t('brand')}` : t('brand')),
@@ -73,12 +69,22 @@ if (!product.value) {
           </div>
         </dl>
 
-        <NuxtLinkLocale
-          :to="inquiryHref"
-          class="mt-8 inline-block rounded-full bg-accent-strong px-8 py-3.5 text-sm font-semibold text-white transition-transform duration-fast hover:scale-[1.03]"
-        >
-          {{ t('cta.inquiry') }}
-        </NuxtLinkLocale>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <button
+            type="button"
+            class="rounded-full bg-accent-strong px-8 py-3.5 text-sm font-semibold text-white transition-transform duration-fast hover:scale-[1.03]"
+            @click="open('inquiry', lt(product.name))"
+          >
+            {{ t('cta.inquiry') }}
+          </button>
+          <button
+            type="button"
+            class="rounded-full border border-border px-8 py-3.5 text-sm font-semibold text-text transition-colors duration-fast hover:border-accent hover:text-accent-strong"
+            @click="open('custom', lt(product.name))"
+          >
+            {{ t('cta.customizeProduct') }}
+          </button>
+        </div>
       </div>
     </div>
 

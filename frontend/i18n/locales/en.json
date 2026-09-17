@@ -3,12 +3,15 @@
   "nav": {
     "home": "Home",
     "products": "Products",
+    "custom": "Custom",
     "about": "About Us",
     "contact": "Contact"
   },
   "cta": {
     "inquiry": "Send an Inquiry",
-    "viewProducts": "View Products"
+    "viewProducts": "View Products",
+    "customize": "Customize",
+    "customizeProduct": "Customize this product"
   },
   "footer": {
     "tagline": "Natural materials, artisan quality, delivered worldwide.",
@@ -76,6 +79,52 @@
     "units": "pcs",
     "related": "Related products"
   },
+  "custom": {
+    "metaTitle": "Custom & Made-to-Order",
+    "metaDescription": "Send us your design or idea and we'll craft custom baskets, ceramics and handicrafts to your spec.",
+    "heroEyebrow": "Made-to-order",
+    "heroTitle": "Have a design in mind? We'll craft it.",
+    "heroSubtitle": "From a reference image to a rough idea — we turn it into a custom product that fits your brand.",
+    "pathwaysTitle": "Two ways to start",
+    "pathwaysSubtitle": "Choose whichever is easier for you.",
+    "pathwayImageTitle": "Custom from your image",
+    "pathwayImageDesc": "Send us a photo, drawing or sample. We'll quote, sample and produce to your spec.",
+    "pathwayIdeaTitle": "Tell us your idea",
+    "pathwayIdeaDesc": "Describe the size, material and style you have in mind. We'll propose options and a quote.",
+    "capabilitiesTitle": "What we can customize",
+    "capabilitiesSubtitle": "We adapt almost every part of a product to your needs.",
+    "capabilities": {
+      "size": {
+        "title": "Size & Shape",
+        "desc": "Adjust top, height and base to fit your display or retail needs."
+      },
+      "color": {
+        "title": "Colour & Finish",
+        "desc": "Natural dyes, paints and glazes to match your brand palette."
+      },
+      "material": {
+        "title": "Material",
+        "desc": "Willow, rattan, seagrass, ceramic, glass and more."
+      },
+      "logo": {
+        "title": "Logo & Print",
+        "desc": "Woven labels, printing and packaging with your brand."
+      },
+      "packaging": {
+        "title": "Packaging",
+        "desc": "Custom boxes, hang tags and retail-ready presentation."
+      },
+      "moq": {
+        "title": "Flexible MOQ",
+        "desc": "Low minimums to test a custom line before scaling up."
+      }
+    },
+    "categoriesTitle": "Customize any of our ranges",
+    "categoriesSubtitle": "Start from an existing product and make it yours.",
+    "ctaTitle": "Start your custom project",
+    "ctaSubtitle": "Tell us your idea or send an image — we'll reply with a quote within 24 hours.",
+    "ctaButton": "Start a custom inquiry"
+  },
   "about": {
     "title": "About Us",
     "intro": "We craft natural-material baskets and ceramics for buyers around the world.",
@@ -130,16 +179,24 @@
     "form": {
       "title": "Send an Inquiry",
       "subtitle": "Fill in the form and we will reply with a quote.",
+      "typeLabel": "What would you like to do?",
+      "typeInquiry": "Inquiry",
+      "typeCustom": "Customize",
       "name": "Your Name",
       "email": "Email",
       "country": "Country",
       "product": "Product",
       "message": "Message",
+      "messageCustom": "Your design idea",
+      "uploadLabel": "Reference image",
+      "uploadHint": "Optional — JPG or PNG of your design or reference.",
+      "uploadButton": "Choose an image",
       "submit": "Submit Inquiry",
       "submitting": "Sending…",
       "successTitle": "Thank you!",
       "successMessage": "Your inquiry has been received. We will get back to you shortly.",
       "again": "Send another inquiry",
+      "close": "Close",
       "errors": {
         "name": "Please enter your name.",
         "email": "Please enter a valid email address.",
